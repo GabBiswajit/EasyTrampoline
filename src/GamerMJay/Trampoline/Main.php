@@ -31,12 +31,12 @@ class Main extends PluginBase implements Listener {
         $z = $player->getLocation()->getZ();
 		$world = $player->getworld();
         $block = $world->getBlock($player->getPosition()->getSide(0));
-		if($block->getID() == $this->config->get('Block')){
+		if($block->getTypeId() = BlockTypeIds::SLIME){
 			$direction = $player->getDirectionVector();
             $dx = $direction->getX();
             $dz = $direction->getZ();
 			$dy = $direction->getY();
-			if($this->config->get("Particle") == "true"){
+			if($this->config->get("Particle") === "true"){
                 $world->addParticle(new Vector3($x - 0.3, $y, $z), new HappyVillagerParticle);
                 $world->addParticle(new Vector3($x, $y, $z - 0.3), new HappyVillagerParticle);
                 $world->addParticle(new Vector3($x + 0.3, $y, $z), new HappyVillagerParticle);
