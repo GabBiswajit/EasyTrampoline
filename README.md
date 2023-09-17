@@ -1,5 +1,5 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# Easytrampoline - V1.0.0  
+# Easytrampoline - V1.5.0  
 
 ### Report Bug
 You've found a Bug?
